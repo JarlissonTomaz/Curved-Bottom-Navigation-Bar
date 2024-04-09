@@ -20,11 +20,12 @@ class _HomeAppState extends State<HomeApp> {
         buttonBackgroundColor: const Color.fromARGB(255, 102, 112, 219),
         color: const Color.fromARGB(255, 18, 18, 18),
         animationDuration: const Duration(milliseconds: 300),
+        iconPadding: 15,
         index: page,
         items: [
           CurvedNavigationBarItem(
             child: SizedBox(
-                height: 26,
+                height: 30,
                 child: Image.asset(
                   'lib/icons/fi-rr-home.png',
                   color: page == 0
@@ -34,7 +35,7 @@ class _HomeAppState extends State<HomeApp> {
           ),
           CurvedNavigationBarItem(
             child: SizedBox(
-                height: 26,
+                height: 30,
                 child: Image.asset(
                   'lib/icons/fi-rr-chart-pie-alt.png',
                   color: page == 1
@@ -44,7 +45,7 @@ class _HomeAppState extends State<HomeApp> {
           ),
           CurvedNavigationBarItem(
             child: SizedBox(
-                height: 26,
+                height: 30,
                 child: Image.asset(
                   'lib/icons/fi-rr-clock.png',
                   color: page == 2
@@ -54,7 +55,7 @@ class _HomeAppState extends State<HomeApp> {
           ),
           CurvedNavigationBarItem(
             child: SizedBox(
-                height: 26,
+                height: 30,
                 child: Image.asset(
                   'lib/icons/fi-rr-bell.png',
                   color: page == 3
