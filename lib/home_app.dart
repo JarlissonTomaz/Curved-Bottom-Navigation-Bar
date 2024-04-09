@@ -17,34 +17,50 @@ class _HomeAppState extends State<HomeApp> {
       backgroundColor: const Color.fromARGB(255, 18, 24, 39),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
-        buttonBackgroundColor: const Color.fromARGB(255, 40, 44, 219),
+        buttonBackgroundColor: const Color.fromARGB(255, 102, 112, 219),
         color: const Color.fromARGB(255, 18, 18, 18),
         animationDuration: const Duration(milliseconds: 300),
         index: page,
         items: [
           CurvedNavigationBarItem(
-            child: Icon(
-              Icons.home_outlined,
-              color: page == 0 ? Colors.white : Colors.white30,
-            ),
+            child: SizedBox(
+                height: 26,
+                child: Image.asset(
+                  'lib/icons/fi-rr-home.png',
+                  color: page == 0
+                      ? Colors.white
+                      : const Color.fromARGB(255, 59, 64, 87),
+                )),
           ),
           CurvedNavigationBarItem(
-            child: Icon(
-              Icons.pie_chart_outline,
-              color: page == 1 ? Colors.white : Colors.white30,
-            ),
+            child: SizedBox(
+                height: 26,
+                child: Image.asset(
+                  'lib/icons/fi-rr-chart-pie-alt.png',
+                  color: page == 1
+                      ? Colors.white
+                      : const Color.fromARGB(255, 59, 64, 87),
+                )),
           ),
           CurvedNavigationBarItem(
-            child: Icon(
-              Icons.access_time_rounded,
-              color: page == 2 ? Colors.white : Colors.white30,
-            ),
+            child: SizedBox(
+                height: 26,
+                child: Image.asset(
+                  'lib/icons/fi-rr-clock.png',
+                  color: page == 2
+                      ? Colors.white
+                      : const Color.fromARGB(255, 59, 64, 87),
+                )),
           ),
           CurvedNavigationBarItem(
-            child: Icon(
-              Icons.settings_outlined,
-              color: page == 3 ? Colors.white : Colors.white30,
-            ),
+            child: SizedBox(
+                height: 26,
+                child: Image.asset(
+                  'lib/icons/fi-rr-bell.png',
+                  color: page == 3
+                      ? Colors.white
+                      : const Color.fromARGB(255, 59, 64, 87),
+                )),
           ),
         ],
         onTap: (index) {
